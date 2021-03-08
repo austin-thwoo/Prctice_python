@@ -55,3 +55,75 @@ print(name,"은(는) 사람일까요?", is_adult)
 #변수를 이용해서 다음을 출력하시오 
 station = "사당" 
 print(station,"행열차가 들어오고 있습니다.")
+
+number= (2 + 3)*4
+print(number)
+number +=2
+print(number)
+number -=2
+print(number)
+number *=2
+print(number)
+number /=2
+print(number)
+number %=5
+print(number)
+
+print(abs(-5))#절댓값
+print(pow(4,2))#4의2승
+print(max(5,12))#최댓값
+print(min(5,12))#최솟값
+print(round(3.14))#최솟값
+print(round(4.999))#최솟값
+
+from math import * #메쓰라이브러리 소환!!
+
+print (floor(4.99))#내림
+print (ceil(3.14))#올림
+print(sqrt(16))#제곱근
+
+from random import * #랜덤라이브러리 소환!!
+
+print(random())
+print(random()*10)
+print(int(random()*10))
+print(int(random()*10))
+print(int(random()*10)+1)
+print(int(random()*10)+1)
+print(int(random()*10)+1)
+print("-"*100)
+print(int(random()*45)+1)#1부터 45이하의 값
+print(randrange(1,46))#1부터 45이하의 값
+print(randint(1,45))#1부터 45이하의 값
+
+#퀴즈
+first=randint(4,28)
+second=randint(4,28)
+third=randint(4,28)
+fourse=randint(4,28)
+print("오프라인 스터디 모임 날짜는 매월",first,second,third,fourse,"일로 선정되었습니다" )
+
+sentence= '나는 소년입니다.' 
+sentence2= "파이썬은 쉽습니다."
+print(sentence)
+print(sentence2)
+sentence3="""
+줄바꿈처리(큰따옴표3개)로 인해 쓴데로 보여지게 됩니다 이 문장은 세줄로 뜨게 됩니다
+"""
+print(sentence3)
+#슬라이싱[]
+jumin= "990120-1234567"
+print("성별 : ",jumin[7])
+if jumin[7] == "1":
+    sung="남자"
+elif jumin[7] == "2":
+    sung="여자"
+else:
+    sung="불분명"
+print("성별 : ", sung)
+print("연 : ",jumin[0:2])#0부터 2직전까지(0~2)
+print("월 : ",jumin[2:4])#2부터 4직전까지(2~3)
+print("일 : ",jumin[4:6])#4부터 6직전까지(4~5)
+print("생년월일 : ",jumin[:6])#처음부터 6직전까지
+print("뒤 7자리 : ",jumin[7:])#7부터 끝까지
+print("뒤 7자리(뒤자리부터): ",jumin[-7:])#맨뒤에서 7부터 끝까지
